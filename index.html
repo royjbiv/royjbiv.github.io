@@ -16,21 +16,25 @@
 
 <body>
 
-  <canvas id="textBacking" width="1700" height="1700"> </canvas>
-  <script>
-    var textBacking = document.getElementById("textBacking");
-    var ctx = textBacking.getContext("2d");
-    ctx.fillStyle = '#FFF8E7';
-    ctx.globalAlpha = .71;
-    ctx.fillRect(200,120,1200,1700);
-  </script>
-
-  <svg width="1900" height="600">
-    <rect x="100" y="0" width="150" height="150"
-      style="fill:#FFF8E7;opacity:0.9"/>
-  </svg>
-
   <div id="wrapper">
+    <div style=position:absolute;left:0;top:0;>
+      <canvas id="textBacking" width="1700" height="1700"> </canvas>
+      <script>
+        var textBacking = document.getElementById("textBacking");
+        var ctx = textBacking.getContext("2d");
+        ctx.fillStyle = '#FFF8E7';
+        ctx.globalAlpha = .71;
+        ctx.fillRect(200,120,1200,1700);
+      </script>
+    
+      <svg width="1700" height="600">
+        <rect x="100" y="0" width="150" height="150"
+          style="fill:#FFF8E7;opacity:0.9"/>
+      </svg>
+    </div>
+
+
+    
     <div style="position:absolute;left:220;top:150;width:1000;height:1600;">
       Test
     </div>
