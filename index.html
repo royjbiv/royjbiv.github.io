@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-  body {
-    background-image: url("https://live.staticflickr.com/65535/55302500046_b6c12ee2b9_b.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-</style>
   
+<head>
+  <title>Art Site</title>
+  <style>
+    body {
+      background-image: url("https://live.staticflickr.com/65535/55302500046_b6c12ee2b9_b.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  </style>
+  <script> == $0
+    var textBacking = document.getElementById("textBacking");
+    var t = textBacking.getContext("2d");
+    t.fillstyle = '#FFF8E7';
+    t.globalAlpha = .92;
+  </script>
 </head>
+
+
+<canvas id="textBacking" width="200" height="600">
+
+
+  
 <body>
 <H1>This is a heading</H1>
 <p>This is a paragraph</p>
